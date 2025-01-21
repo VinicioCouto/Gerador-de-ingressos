@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de ingressos</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="/imgs/logo-full.svg" alt="Logo Coding Conf">
+        <h1>FastTicket</h1>
+    </header>
+    <main>
+        <div class="texInicial">
+            <h2>Crie seu ingresso personalizado de forma rápida e fácil,</h2>
+            <h3>tudo aqui, em apenas alguns cliques!</h3>
+        </div>
+
+        <div id="boxFormulario">
+            <form action="">
+
+                <div class="avatarInput">
+                    <p>Upload Avatar</p>
+                    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                </div>
+                <div class="info">
+                    <img src="/imgs/icon-info.svg" alt="Info Logo">
+                    <p id="imginput">Sua foto (JPG ou PNG)</p>
+                </div>
+
+                <div class="pessoalInput">
+                    <p>Full Name</p>
+                    <input type="text" name="nome" id="nome">
+                    <div class="info">
+                        <img src="/imgs/icon-info.svg" alt="Info Logo">
+                        <p id="nomeinput">Sua foto (JPG ou PNG)</p>
+                    </div>
+
+                    <p>Email Address</p>
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                    <div class="info">
+                        <img src="/imgs/icon-info.svg" alt="Info Logo">
+                        <p id="emailinput">Sua foto (JPG ou PNG)</p>
+                    </div>
+
+                    <p>GitHub Username</p>
+                    <input type="text" name="username" id="user name">
+                    <div class="info">
+                        <img src="/imgs/icon-info.svg" alt="Info Logo">
+                        <p>Sua foto (JPG ou PNG)</p>
+                    </div>
+                    <div class="info">
+                        <img src="/imgs/icon-info.svg" alt="Info Logo">
+                        <p id="gitinput">Sua foto (JPG ou PNG)</p>
+                    </div>
+
+                    <button type="submit">Gerar meu Ingresso</button>
+
+                </div>
+
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>
