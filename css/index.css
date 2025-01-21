@@ -5,13 +5,39 @@
 }
 
 body{
-    background-image: url(/imgs/background-mobile.png);
+    display: flex;
+    justify-content: center;
+}
+
+.imgbackgroung{
+    margin: 20px;
+    width: 1000px;
+    height: 700px;
+    background-image: url(/imgs/background-tablet.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    overflow: hidden;
 }
 
 .img03{
-    position: ;
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    
+}
+
+.img01{
+    width: 300px;
+    position: absolute;
+    left: 960px;
+    top: 200px;
+    
+}
+
+.img02{
+    width:430px;
+    left: 0px;
+    margin-top: 50px;
+    z-index: -1;
 }
