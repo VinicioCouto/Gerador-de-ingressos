@@ -1,16 +1,23 @@
-const formulario = document.getElementById('formulario')
-const emailInput = document.getElementById('email')
-const errpEmail = document.getElementById('emailinput')
+document.addEventListener("DOMContentLoaded", () =>{
+    const from = document.getElementById("formulario")
 
-function validarEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return regex.test(email)
-}
+    from.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-formulario.addEventListener('submit', function(event) {
-    const emailValor = emailInput.value
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const username = document.getElementById("username").value;
+        const avatar = document.getElementById("imageUpload").files[0];
+        const DivInput = document.getElementById('imgbackgroung')
 
-    if (!validarEmail(emailValor)) {
-        errpEmail.textContent = "Email inválido"
-    }
+        const ingresso = {
+            nome,
+            email,
+            username,
+            avatar: avatar ? avatar.name : "Nenhum arquivo enviado"
+        }
+
+        console.log("Dados do Ingresso:", ingresso);
+        DivInput.style.display = "none"
+    })
 })
