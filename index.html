@@ -11,65 +11,71 @@
 
 <body>
     <div class="imgbackgroung">
-    <header>
-        <img id="imgLogo" src="/imgs/logo-full.svg" alt="Logo Coding Conf">
-    </header>
-    <main>
-        <div class="texInicial">
-            <h2>Crie seu ingresso personalizado </h2>
-            <h3>de forma rápida e fácil,tudo aqui, em apenas alguns cliques!</h3>
-        </div>
+        <header>
+            <img id="imgLogo" src="/imgs/logo-full.svg" alt="Logo Coding Conf">
+        </header>
+        <main>
+            <div class="texInicial">
+                <h2>Crie seu ingresso personalizado </h2>
+                <h3>de forma rápida e fácil,tudo aqui, em apenas alguns cliques!</h3>
+            </div>
 
-        <div id="boxFormulario">
-            <form action="">
+            <div id="boxFormulario">
+                <form action="">
 
-                <div class="avatarInput inptfont">
-                    <img src="/imgs/icon-upload.svg" alt="">
-                    <p>Upload Avatar</p>
-                    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
-                </div>
-                <div class="info">
-                    <img src="/imgs/icon-info.svg" alt="Info Logo">
-                    <p id="imginput">Sua foto (JPG ou PNG)</p>
-                </div>
-
-                <div class="pessoalInput inptfont">
-                    <p>Full Name</p>
-                    <input type="text" name="nome" id="nome">
-                    <div class="info">
+                    <div class="avatarInput">
+                        
+                        <img class="imgUpload" src="/imgs/icon-upload.svg" alt="">
+                        <p>Upload Avatar</p>
+                        <label class="labelupload" for="imageUpload">Upload Avatar</label>
+                        <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                    </div>
+                    <div class="info infoupload">
                         <img src="/imgs/icon-info.svg" alt="Info Logo">
-                        <p id="nomeinput">Sua foto (JPG ou PNG)</p>
+                        <p id="imginput">Sua foto (JPG ou PNG)</p>
                     </div>
 
-                    <p>Email Address</p>
-                    <input type="email" name="email" id="email" placeholder="exemplo@email.com">
-                    <div class="info">
-                        <img src="/imgs/icon-info.svg" alt="Info Logo">
-                        <p id="emailinput">Sua foto (JPG ou PNG)</p>
+                    <div class="pessoalInput">
+                        <p>Full Name</p>
+                        <input type="text" name="nome" id="nome">
+                        <div class="info">
+                            <img src="/imgs/icon-info.svg" alt="Info Logo">
+                            <p id="nomeinput">Sua foto (JPG ou PNG)</p>
+                        </div>
+
+                        <p>Email Address</p>
+                        <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                        <div class="info">
+                            <img src="/imgs/icon-info.svg" alt="Info Logo">
+                            <p id="emailinput">Sua foto (JPG ou PNG)</p>
+                        </div>
+
+                        <p>GitHub Username</p>
+                        <input type="text" name="username" id="user name">
+                        <div class="info">
+                            <img src="/imgs/icon-info.svg" alt="Info Logo">
+                            <p id="gitinput">Sua foto (JPG ou PNG)</p>
+                        </div>
+
+                        <button type="submit">Gerar meu Ingresso</button>
+
                     </div>
 
-                    <p>GitHub Username</p>
-                    <input type="text" name="username" id="user name">
-                    <div class="info">
-                        <img src="/imgs/icon-info.svg" alt="Info Logo">
-                        <p id="gitinput">Sua foto (JPG ou PNG)</p>
-                    </div>
+                </form>
+            </div>
 
-                    <button type="submit">Gerar meu Ingresso</button>
+            <img class="img01" src="/imgs/pattern-squiggly-line-top.svg" alt="">
 
-                </div>
+            <img class="img02" src="/imgs/pattern-squiggly-line-bottom-desktop.svg" alt="">
 
-            </form>
-        </div>
+            <img class="img03" src="/imgs/pattern-lines.svg" alt="">
 
-    </main>
-    <img class="img01" src="/imgs/pattern-squiggly-line-top.svg" alt="">
-    <img class="img02" src="/imgs/pattern-squiggly-line-bottom-desktop.svg" alt="">
-    <img class="img03" src="/imgs/pattern-lines.svg" alt="">
-    <img class="img04" src="/imgs/pattern-circle.svg" alt="">
+            <img class="img04" src="/imgs/pattern-circle.svg" alt="">
+        </main>
+
     </div>
-    
-    
+
+
 </body>
 
 </html>
