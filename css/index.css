@@ -27,6 +27,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    z-index: 99;
 }
 
 .img01 {
@@ -38,10 +39,9 @@ body {
 }
 
 .img02 {
+    position: absolute;
     width: 430px;
-    left: 0px;
-    margin-top: 50px;
-    z-index: -1;
+    margin-top: -135px;
 }
 
 .img03 {
@@ -137,4 +137,46 @@ header {
 
 .pessoalInput{
     margin-top: 30px;
+}
+
+.input-estilo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 360px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ffffff23;
+    border: 1px solid rgba(255, 255, 255, 0.306);
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.infoEstilo{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+button{
+    font-family: 'Inconsolada';
+    font-size: 15px;
+    width: 360px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(244, 124, 25);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.box-button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: rgba(244, 124, 25, 0.534);
+    color: rgba(255, 255, 255, 0.468);
 }
