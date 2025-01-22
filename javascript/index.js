@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () =>{
         const email = document.getElementById("email").value;
         const username = document.getElementById("username").value;
         const avatar = document.getElementById("imageUpload").files[0];
+        let ImgUpload = document.getElementById('imgUpload')
         const DivInput = document.getElementById('imgbackgroung')
+
 
         const ingresso = {
             nome,
@@ -21,3 +23,29 @@ document.addEventListener("DOMContentLoaded", () =>{
         DivInput.style.display = "none"
     })
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+    const imageUploadInput = document.getElementById("imageUpload");
+    const imgUploadPreview = document.getElementById("imgUpload"); 
+
+    imageUploadInput.addEventListener("change", (event) => {
+        const file = event.target.files[0]; 
+
+        if (file) {
+            const reader = new FileReader();
+
+            
+            reader.onload = (e) => {
+                imgUploadPreview.src = e.target.result; 
+            };
+
+            reader.readAsDataURL(file);
+            imgUploadPreview.style.width = "40px";
+            
+        } else {
+            
+            imgUploadPreview.src = "/imgs/icon-upload.svg";
+             
+        }
+    });
+});
