@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Inconsolada';
+    src: url(/fonts/Inconsolata-VariableFont_wdth\,wght.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    font-family: 'Inconsolada';
 }
 
 .imgbackgroung{
@@ -18,13 +27,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-}
-
-.img03{
-    position: absolute;
-    left: 50px;
-    top: 5px;
-    
 }
 
 .img01{
@@ -40,4 +42,33 @@ body{
     left: 0px;
     margin-top: 50px;
     z-index: -1;
+}
+
+.img03{
+    position: absolute;
+    left: 50px;
+    top: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#imgLogo{
+    width: 190px;
+}
+
+.texInicial{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texInicial > h2{
+    font-size: 40px;
+    
 }
