@@ -193,5 +193,61 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 999;
+    color: white;
+    position: relative;
+}
+
+.box-imgingresso{
+    margin-top: -134px;
+    position: absolute;
+    left: -20px;
+}
+
+#img-ingresso{
+    width: 520px;
+}
+
+.logo-ingresso{
+    margin-top: 140px;
+    left: 260px;
+    position: absolute;
+}
+
+.box-ingressoAvatar{
+    position: absolute;
+    margin-top: 260px;
+    display: flex;
+    left: 260px;
+}
+
+#imgavatar{
+    z-index: 99;
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-top: -10px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+#Nome{
+    font-size: 20px;
+}
+
+.logo-git{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 110px;
+    margin-top: 40px;
+}
+
+#codigo{
+    position: absolute;
+    left: 420px;
+    font-size: 25px;
+    margin-top: -20px;
+    transform: rotate(90deg);
+    color: rgba(255, 255, 255, 0.642);
 }
