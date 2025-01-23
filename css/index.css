@@ -28,6 +28,7 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 99;
+    display: none;
 }
 
 .img01 {
@@ -41,7 +42,7 @@ body {
 .img02 {
     position: absolute;
     width: 430px;
-    margin-top: -135px;
+    margin-top: -119px;
 }
 
 .img03 {
@@ -181,4 +182,9 @@ button{
 button:hover{
     background-color: rgba(244, 124, 25, 0.534);
     color: rgba(255, 255, 255, 0.468);
+}
+
+
+#ingressogerado{
+    display: block;
 }

@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         const avatar = document.getElementById("imageUpload").files[0];
         let ImgUpload = document.getElementById('imgUpload')
         const DivInput = document.getElementById('imgbackgroung')
+        const DivIngresso = document.getElementById('ingressogerado')
+
 
 
         const ingresso = {
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
         console.log("Dados do Ingresso:", ingresso);
         DivInput.style.display = "none"
+        DivIngresso.style.display = "block"
     })
 })
 
